@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Seven.Shop"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_main_image"
+        android:label="@string/app_name"
+        android:theme="@style/mystyle" >
+        <activity
+            android:name="com.view.UI.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.view.UI.FisrtActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.view.homeSearch.SearchActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.view.personal.PreviewimgActivity"
+            android:label="@string/title_activity_previewimg" >
+        </activity>
+        <activity
+            android:name="com.personal.personInfo.PersonalinfoActivity"
+            android:label="@string/title_activity_personalinfo" >
+        </activity>
+        <activity
+            android:name="com.personal.personInfo.EditusernameActivity"
+            android:label="@string/title_activity_editusername" >
+        </activity>
+        <activity
+            android:name="com.personal.address.MyaddressActivity"
+            android:label="@string/title_activity_myaddress" >
+        </activity>
+        <activity
+            android:name="com.personal.order.MyorderActivity"
+            android:label="@string/title_activity_myorder" >
+        </activity>
+        <activity
+            android:name="com.login.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.login.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.cart.CheckoutActivity"
+            android:label="@string/title_activity_checkout" >
+        </activity>
+        <activity
+            android:name="com.cart.UpdateAddressActivity"
+            android:label="@string/title_activity_update_address" >
+        </activity>
+        <activity
+            android:name="com.commodity.CommodityActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.personal.address.AddaddressActivity"
+            android:label="@string/title_activity_addaddress" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.CaptureActivity"
+            android:label="@string/title_activity_capture" >
+        </activity>
+        <activity
+            android:name="com.search.show.Search_showActivity"
+            android:label="@string/title_activity_capture" >
+        </activity>
+        <activity
+            android:name="com.cart.SureCheckOutActivity"
+            android:label="@string/title_activity_capture" >
+        </activity>
+        <activity
+            android:name="com.cart.ChecksuccessActivity"
+            android:label="@string/title_activity_capture" >
+        </activity>
+        <activity
+            android:name="com.fenlei.ScrollGridActivity"
+            android:label="@string/title_activity_capture" >
+        </activity>
+        <activity
+            android:name="com.tejia_like.likeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tejia_like.tejiaActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ChoujiangActivity"
+            android:label="@string/title_activity_choujiang" >
+        </activity>
+        <activity
+            android:name="com.Selectarea.Selectarea"
+            android:label="@string/title_activity_choujiang" >
+        </activity>
+        <activity
+            android:name="com.eromanga.robot.RobotActivity"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

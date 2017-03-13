@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#BBBBBB"
+        android:columnCount="4"
+        
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+             android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:background="@drawable/post" />
+
+        <EditText
+            android:id="@+id/chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="0"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/ChatListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout1"   
+        android:listSelector="#00000000"
+        android:transcriptMode="alwaysScroll"
+        android:divider="@null"
+        android:dividerHeight="2dp" >
+    </ListView>
+
+</RelativeLayout>

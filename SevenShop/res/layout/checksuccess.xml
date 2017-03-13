@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAF0"
+    tools:context="com.example.aaa.ChecksuccessActivity" >
+
+    <TextView
+        android:id="@+id/success_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="结算成功，共消费：0元"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/success_gabackcenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_button"
+        android:text="评论并返回主页" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/success_price"
+        android:layout_marginTop="15dp"
+        android:background="#efefef"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <EditText	
+        android:id="@+id/add_content"	
+        android:layout_width="fill_parent"	
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_centerHorizontal="true"	
+        android:enabled="true"	
+        android:inputType="textMultiLine"	
+        android:minLines="8"	
+        android:maxLines="10"	
+        android:scrollbars="vertical" 	
+        android:background="@android:drawable/edit_text"	>
+        
+    </EditText>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/lightgray"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:id="@+id/tab1"
+    	android:layout_width="0dip"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:orientation="vertical" >
+    	
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/home_img"
+            android:src="@drawable/home_press"
+             />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="3dp"  
+            android:gravity="center" 
+            android:id="@+id/home_text"  
+            android:textSize="8sp"
+            android:textColor="#FF9900"   
+            android:text="首页" />
+        
+	</LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/tab2"
+    	android:layout_width="0dip"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:orientation="vertical" >
+    	
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/cart_img"
+            android:src="@drawable/cart"
+             />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:id="@+id/cart_text"
+            android:textSize="8sp" 
+            android:text="购物车" />
+        
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:id="@+id/tab3"
+    	android:layout_width="0dip"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:orientation="vertical" >
+    
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/person_img"
+            android:src="@drawable/person"
+             />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:id="@+id/person_text"
+            android:textSize="8sp" 
+            android:text="个人" />
+
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="1dp"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:id="@+id/menu_tejia"
+    	android:layout_width="0dip"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:orientation="vertical" >
+    	
+        <com.drawcircle.CircleImageView
+	        android:id="@+id/tejia_img"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="5dp"
+	        android:padding="2dp"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/tejia"
+	        app:border_color="@color/light"
+	        app:border_width="1dp" />
+        
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="3dp"  
+            android:gravity="center" 
+            android:id="@+id/tejia_text"  
+            android:textSize="8sp" 
+            android:textColor="@color/gray"  
+            android:text="特价" />
+        
+	</LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/menu_like"
+    	android:layout_width="0dip"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:orientation="vertical" >
+    	
+        <com.drawcircle.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/like_img"
+            android:padding="2dp"
+            android:src="@drawable/like"
+            app:border_color="@color/light"
+	        app:border_width="1dp" 
+	        android:layout_centerHorizontal="true"
+             />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:id="@+id/like_text"
+            android:textSize="8sp" 
+            android:textColor="@color/gray"
+            android:text="猜你喜欢" />
+        
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:id="@+id/menu_fenlei"
+    	android:layout_width="0dip"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:orientation="vertical" >
+    
+        <com.drawcircle.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/fenlei_img"
+            android:padding="2dp"
+            android:src="@drawable/menu"
+            android:layout_centerHorizontal="true"
+            app:border_color="@color/light"
+	        app:border_width="1dp" 
+             />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:id="@+id/fenlei_text"
+            android:textSize="8sp" 
+            android:textColor="@color/gray"
+            android:text="分类" />
+
+	</LinearLayout>
+	
+</LinearLayout>
+
